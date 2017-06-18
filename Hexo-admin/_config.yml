@@ -68,7 +68,6 @@ theme: BlueLake
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  deploy:
-       type: git
-       repo: https://github.com/leopardpan/leopardpan.github.io.git
-       branch: master
+      type: git
+      repo: https://github.com/bigfoot110614/bigfoot110614.github.io.git
+      branch: master
