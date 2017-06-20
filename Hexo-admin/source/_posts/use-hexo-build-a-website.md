@@ -54,9 +54,40 @@ $ hexo server
 ```
 输入Ctrl+C停止服务。
 ##### 4.配置文件
-
+打开Hexo-admin根目录的文件_config.yml,这个是整个项目的配置文件,在最末一行
+```
+deploy:
+  type: git
+  repository: https://github.com/chaooo/chaooo.github.io.git(填写自己的github仓库地址)
+  branch: master
+```
 ##### 5.部署
-
+在本地生成模板  并且发布到github远程仓库
+```
+$ npm install hexo-deployer-git --save
+$ hexo generate
+$ hexo deploy
+```
+访问方式：
+ - 访问本地  
+ ```
+ hexo server
+ ```
+ 在本地浏览器输入localhost:4000或者本地ip:4000
+ - 访问github外网发布
+ 浏览器输入用户名.github.io
+ 
+  每次更改或者新建文章  都要hexo generate重新生成模板，然后hexo deploy 发布文件，成功提示如下
+  ```
+  
+```
+以上是本地和远程都可以正常访问，以防文件丢失或者换环境开发我们要把本地的工程文件上传到github远程仓库的develop分支
+```
+git add -A
+git commit -m "注释内容"
+git pull origin master
+git push origin develop
+```
 ##### 6.编写文章
 
 ##### 7.主题
