@@ -61,6 +61,7 @@ deploy:
   repository: https://github.com/chaooo/chaooo.github.io.git(填写自己的github仓库地址)
   branch: master
 ```
+
 ##### 5.部署
 在本地生成模板  并且发布到github远程仓库
 ```
@@ -77,7 +78,7 @@ $ hexo deploy
  - 访问github外网发布
  浏览器输入用户名.github.io
  
-  每次更改或者新建文章  都要hexo generate重新生成模板，然后hexo deploy 发布文件，成功提示如下
+ ######  每次更改或者新建文章  都要hexo generate重新生成模板，然后hexo deploy 发布文件，成功提示如下
   
   ``` bash
   INFO  Deploying: git
@@ -91,7 +92,15 @@ $ hexo deploy
   Branch master set up to track remote branch master from https://github.com/bigfoot110614/bigfoot110614.github.io.git.
   INFO  Deploy done: git
    ```
-
+###### 添加标签🏷(tag)
+```
+---
+title: xxx
+date: xxx
+tags:
+  - tag
+---
+```
 以上是本地和远程都可以正常访问，以防文件丢失或者换环境开发我们要把本地的工程文件上传到github远程仓库的develop分支
 
 ```
@@ -124,6 +133,7 @@ hexo new post 'name'
 ```hexo new "postName" #新建文章
    hexo new page "pageName" #新建页面
    hexo generate #生成静态页面至public目录
+   hexo generate -w #监听文件变动
    hexo server #开启预览访问端口（默认端口4000，'ctrl + c'关闭server）
    hexo deploy #将.deploy目录部署到GitHub
    hexo help  # 查看帮助
@@ -136,3 +146,5 @@ hexo new post 'name'
    hexo s == hexo server
    hexo d == hexo deploy
 ```
+
+参考链接: https://hexo.io/zh-cn/docs/tag-plugins
