@@ -4,7 +4,7 @@ date: 2019-12-11 17:49:46
 tags:
     - 工具
 ---
-
+<font color=red size=3 face="黑体">现在很多代码编辑器都内置了emmet语法, 使我们可以快速生成结构块</font>
 ### (Emmet)代码快捷方式
 官方文档: https://docs.emmet.io
 
@@ -59,7 +59,7 @@ tags:
 <blockquote></blockquote>
 ```
 
-#### Multiplication: 多个元素 *
+#### 4.Multiplication: 多个元素 *
 ##### ul>li*5
 
 ```
@@ -72,7 +72,7 @@ tags:
 </ul>
 ```
 
-#### Grouping: 分组 ()
+#### 5.Grouping: 分组 ()
 ##### div>(header>ul>li*2>a)+footer>p
 ```
 <div>
@@ -108,7 +108,7 @@ tags:
 
 ### Attribute operators
 
-#### ID and CLASS
+#### 1.ID and CLASS
 ##### div#header+div.page+div#footer.class1.class2.class3
 ```
     <div id="header"></div>
