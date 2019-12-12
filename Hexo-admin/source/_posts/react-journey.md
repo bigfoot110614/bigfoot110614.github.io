@@ -2,6 +2,7 @@
 title: react journey
 date: 2017-07-06 18:28:57
 tags:
+   - react
 ---
 今年七月三号开始接触react,由于工作需要,要不断的了解和应用react全家桶,git和es6也是必不可少,接下来记录一下在工作中遇到的一些问题
 
